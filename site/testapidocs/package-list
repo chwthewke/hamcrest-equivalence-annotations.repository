@@ -1,6 +1,10 @@
 net.chwthewke.hamcrest.annotations
+net.chwthewke.hamcrest.equivalence
+net.chwthewke.hamcrest.gas
 net.chwthewke.hamcrest.matchers
-net.chwthewke.hamcrest.matchers.use_case_classes
-net.chwthewke.hamcrest.matchers.use_case_classes.isolated
-net.chwthewke.hamcrest.sample
+net.chwthewke.hamcrest.sut.classes
+net.chwthewke.hamcrest.sut.classes.isolated
+net.chwthewke.hamcrest.sut.equivalences
+net.chwthewke.hamcrest.sut.nonpublic
+net.chwthewke.hamcrest.sut.specs
 net.chwthewke.hamcrest.visibility
