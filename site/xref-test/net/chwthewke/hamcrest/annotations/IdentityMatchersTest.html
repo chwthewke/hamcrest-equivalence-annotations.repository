@@ -10,7 +10,7 @@
 
 <a class="jxr_linenumber" name="1" href="#1">1</a>   <strong class="jxr_keyword">package</strong> net.chwthewke.hamcrest.annotations;
 <a class="jxr_linenumber" name="2" href="#2">2</a>   
-<a class="jxr_linenumber" name="3" href="#3">3</a>   <strong class="jxr_keyword">import</strong> <strong class="jxr_keyword">static</strong> net.chwthewke.hamcrest.matchers.EquivalenceMatchers.asSpecifiedBy;
+<a class="jxr_linenumber" name="3" href="#3">3</a>   <strong class="jxr_keyword">import</strong> <strong class="jxr_keyword">static</strong> net.chwthewke.hamcrest.matchers.Equivalences.asSpecifiedBy;
 <a class="jxr_linenumber" name="4" href="#4">4</a>   <strong class="jxr_keyword">import</strong> <strong class="jxr_keyword">static</strong> org.hamcrest.MatcherAssert.assertThat;
 <a class="jxr_linenumber" name="5" href="#5">5</a>   <strong class="jxr_keyword">import</strong> <strong class="jxr_keyword">static</strong> org.hamcrest.Matchers.is;
 <a class="jxr_linenumber" name="6" href="#6">6</a>   <strong class="jxr_keyword">import</strong> net.chwthewke.hamcrest.annotations.EquivalenceSpecificationOn;
@@ -25,8 +25,8 @@
 <a class="jxr_linenumber" name="15" href="#15">15</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> identicalReferencesMatch( ) <strong class="jxr_keyword">throws</strong> Exception {
 <a class="jxr_linenumber" name="16" href="#16">16</a>          <em class="jxr_comment">// Setup</em>
 <a class="jxr_linenumber" name="17" href="#17">17</a>          <strong class="jxr_keyword">final</strong> <a href="../../../../net/chwthewke/hamcrest/annotations/IdentityMatchersTest.html">IntHolder</a> ref = <strong class="jxr_keyword">new</strong> <a href="../../../../net/chwthewke/hamcrest/annotations/IdentityMatchersTest.html">IntHolder</a>( 12 );
-<a class="jxr_linenumber" name="18" href="#18">18</a>          <strong class="jxr_keyword">final</strong> <a href="../../../../net/chwthewke/hamcrest/annotations/IdentityMatchersTest.html">Matched</a> first = <strong class="jxr_keyword">new</strong> <a href="../../../../net/chwthewke/hamcrest/annotations/IdentityMatchersTest.html">Matched</a>( ref );
-<a class="jxr_linenumber" name="19" href="#19">19</a>          <strong class="jxr_keyword">final</strong> <a href="../../../../net/chwthewke/hamcrest/annotations/IdentityMatchersTest.html">Matched</a> second = <strong class="jxr_keyword">new</strong> <a href="../../../../net/chwthewke/hamcrest/annotations/IdentityMatchersTest.html">Matched</a>( ref );
+<a class="jxr_linenumber" name="18" href="#18">18</a>          <strong class="jxr_keyword">final</strong> <a href="../../../../net/chwthewke/hamcrest/annotations/TextMatchersTest.html">Matched</a> first = <strong class="jxr_keyword">new</strong> <a href="../../../../net/chwthewke/hamcrest/annotations/TextMatchersTest.html">Matched</a>( ref );
+<a class="jxr_linenumber" name="19" href="#19">19</a>          <strong class="jxr_keyword">final</strong> <a href="../../../../net/chwthewke/hamcrest/annotations/TextMatchersTest.html">Matched</a> second = <strong class="jxr_keyword">new</strong> <a href="../../../../net/chwthewke/hamcrest/annotations/TextMatchersTest.html">Matched</a>( ref );
 <a class="jxr_linenumber" name="20" href="#20">20</a>          <em class="jxr_comment">// Exercise</em>
 <a class="jxr_linenumber" name="21" href="#21">21</a>          <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">boolean</strong> match = asSpecifiedBy( MatchingSpecification.<strong class="jxr_keyword">class</strong> )
 <a class="jxr_linenumber" name="22" href="#22">22</a>              .equivalentTo( first )
@@ -38,8 +38,8 @@
 <a class="jxr_linenumber" name="28" href="#28">28</a>      @Test
 <a class="jxr_linenumber" name="29" href="#29">29</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> equalButNotIdenticalReferencesDoNotMatch( ) <strong class="jxr_keyword">throws</strong> Exception {
 <a class="jxr_linenumber" name="30" href="#30">30</a>          <em class="jxr_comment">// Setup</em>
-<a class="jxr_linenumber" name="31" href="#31">31</a>          <strong class="jxr_keyword">final</strong> <a href="../../../../net/chwthewke/hamcrest/annotations/IdentityMatchersTest.html">Matched</a> first = <strong class="jxr_keyword">new</strong> <a href="../../../../net/chwthewke/hamcrest/annotations/IdentityMatchersTest.html">Matched</a>( <strong class="jxr_keyword">new</strong> IntHolder( 12 ) );
-<a class="jxr_linenumber" name="32" href="#32">32</a>          <strong class="jxr_keyword">final</strong> <a href="../../../../net/chwthewke/hamcrest/annotations/IdentityMatchersTest.html">Matched</a> second = <strong class="jxr_keyword">new</strong> <a href="../../../../net/chwthewke/hamcrest/annotations/IdentityMatchersTest.html">Matched</a>( <strong class="jxr_keyword">new</strong> IntHolder( 12 ) );
+<a class="jxr_linenumber" name="31" href="#31">31</a>          <strong class="jxr_keyword">final</strong> <a href="../../../../net/chwthewke/hamcrest/annotations/TextMatchersTest.html">Matched</a> first = <strong class="jxr_keyword">new</strong> <a href="../../../../net/chwthewke/hamcrest/annotations/TextMatchersTest.html">Matched</a>( <strong class="jxr_keyword">new</strong> IntHolder( 12 ) );
+<a class="jxr_linenumber" name="32" href="#32">32</a>          <strong class="jxr_keyword">final</strong> <a href="../../../../net/chwthewke/hamcrest/annotations/TextMatchersTest.html">Matched</a> second = <strong class="jxr_keyword">new</strong> <a href="../../../../net/chwthewke/hamcrest/annotations/TextMatchersTest.html">Matched</a>( <strong class="jxr_keyword">new</strong> IntHolder( 12 ) );
 <a class="jxr_linenumber" name="33" href="#33">33</a>  
 <a class="jxr_linenumber" name="34" href="#34">34</a>          assertThat( first.getHolder( ).equals( second.getHolder( ) ), is( <strong class="jxr_keyword">true</strong> ) );
 <a class="jxr_linenumber" name="35" href="#35">35</a>  
@@ -51,9 +51,9 @@
 <a class="jxr_linenumber" name="41" href="#41">41</a>          assertThat( match, is( false ) );
 <a class="jxr_linenumber" name="42" href="#42">42</a>      }
 <a class="jxr_linenumber" name="43" href="#43">43</a>  
-<a class="jxr_linenumber" name="44" href="#44">44</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../net/chwthewke/hamcrest/annotations/IdentityMatchersTest.html">Matched</a> {
+<a class="jxr_linenumber" name="44" href="#44">44</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../net/chwthewke/hamcrest/annotations/TextMatchersTest.html">Matched</a> {
 <a class="jxr_linenumber" name="45" href="#45">45</a>  
-<a class="jxr_linenumber" name="46" href="#46">46</a>          <strong class="jxr_keyword">public</strong> <a href="../../../../net/chwthewke/hamcrest/annotations/IdentityMatchersTest.html">Matched</a>( <strong class="jxr_keyword">final</strong> IntHolder holder ) {
+<a class="jxr_linenumber" name="46" href="#46">46</a>          <strong class="jxr_keyword">public</strong> <a href="../../../../net/chwthewke/hamcrest/annotations/TextMatchersTest.html">Matched</a>( <strong class="jxr_keyword">final</strong> IntHolder holder ) {
 <a class="jxr_linenumber" name="47" href="#47">47</a>              <strong class="jxr_keyword">this</strong>.holder = holder;
 <a class="jxr_linenumber" name="48" href="#48">48</a>          }
 <a class="jxr_linenumber" name="49" href="#49">49</a>  

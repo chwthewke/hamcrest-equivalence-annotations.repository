@@ -8,7 +8,7 @@
     <language>en-us</language>
     <copyright>&#169;2011</copyright>
     <item>
-      <title>File: 31,
+      <title>File: 43,
              Errors: 0,
              Warnings: 0,
              Infos: 0
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.annotations.Equality.java">net/chwthewke/hamcrest/annotations/Equality.java</a>
+                  <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.matchers.ContainerEquivalenceFactory.java">net/chwthewke/hamcrest/matchers/ContainerEquivalenceFactory.java</a>
                 </td>
                 <td>
                   0
@@ -57,7 +57,77 @@
               </tr>
                           <tr>
                 <td>
+                  <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.annotations.Equality.java">net/chwthewke/hamcrest/annotations/Equality.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.matchers.AnnotationReader.java">net/chwthewke/hamcrest/matchers/AnnotationReader.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.matchers.BasicTypeEquivalenceInterpreter.java">net/chwthewke/hamcrest/matchers/BasicTypeEquivalenceInterpreter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.matchers.EquivalenceSpecificationValidator.java">net/chwthewke/hamcrest/matchers/EquivalenceSpecificationValidator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.equivalence.ArrayEquivalences.java">net/chwthewke/hamcrest/equivalence/ArrayEquivalences.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.annotations.Text.java">net/chwthewke/hamcrest/annotations/Text.java</a>
                 </td>
                 <td>
                   0
@@ -127,6 +197,20 @@
               </tr>
                           <tr>
                 <td>
+                  <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.annotations.OnIterableElements.java">net/chwthewke/hamcrest/annotations/OnIterableElements.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.equivalence.LiftedMatcher.java">net/chwthewke/hamcrest/equivalence/LiftedMatcher.java</a>
                 </td>
                 <td>
@@ -142,6 +226,20 @@
                           <tr>
                 <td>
                   <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.matchers.FindVisiblePropertyFunction.java">net/chwthewke/hamcrest/matchers/FindVisiblePropertyFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.equivalence.TextEquivalenceOption.java">net/chwthewke/hamcrest/equivalence/TextEquivalenceOption.java</a>
                 </td>
                 <td>
                   0
@@ -183,7 +281,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.matchers.EquivalenceMatchers.java">net/chwthewke/hamcrest/matchers/EquivalenceMatchers.java</a>
+                  <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.equivalence.IterableEquivalence.java">net/chwthewke/hamcrest/equivalence/IterableEquivalence.java</a>
                 </td>
                 <td>
                   0
@@ -211,7 +309,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.equivalence.EqualityEquivalence.java">net/chwthewke/hamcrest/equivalence/EqualityEquivalence.java</a>
+                  <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.matchers.CompositeMatcher.java">net/chwthewke/hamcrest/matchers/CompositeMatcher.java</a>
                 </td>
                 <td>
                   0
@@ -225,7 +323,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.matchers.CompositeMatcher.java">net/chwthewke/hamcrest/matchers/CompositeMatcher.java</a>
+                  <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.equivalence.EqualityEquivalence.java">net/chwthewke/hamcrest/equivalence/EqualityEquivalence.java</a>
                 </td>
                 <td>
                   0
@@ -323,7 +421,21 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.matchers.AnnotationTypeReader.java">net/chwthewke/hamcrest/matchers/AnnotationTypeReader.java</a>
+                  <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.equivalence.TextEquivalenceCore.java">net/chwthewke/hamcrest/equivalence/TextEquivalenceCore.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.matchers.TypeEquivalenceInterpreter.java">net/chwthewke/hamcrest/matchers/TypeEquivalenceInterpreter.java</a>
                 </td>
                 <td>
                   0
@@ -421,7 +533,63 @@
               </tr>
                           <tr>
                 <td>
+                  <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.equivalence.TextEquivalence.java">net/chwthewke/hamcrest/equivalence/TextEquivalence.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.matchers.LiftedEquivalenceFactory.java">net/chwthewke/hamcrest/matchers/LiftedEquivalenceFactory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.matchers.TypeEquivalenceSpecification.java">net/chwthewke/hamcrest/matchers/TypeEquivalenceSpecification.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.matchers.Equivalences.java">net/chwthewke/hamcrest/matchers/Equivalences.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.annotations.OnArrayElements.java">net/chwthewke/hamcrest/annotations/OnArrayElements.java</a>
                 </td>
                 <td>
                   0

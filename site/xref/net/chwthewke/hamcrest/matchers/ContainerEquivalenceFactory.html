@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>ContainerEquivalenceFactory xref</title>
+<link type="text/css" rel="stylesheet" href="../../../../stylesheet.css" />
+</head>
+<body>
+<div id="overview"><a href="../../../../../apidocs/net/chwthewke/hamcrest/matchers/ContainerEquivalenceFactory.html">View Javadoc</a></div><pre>
+
+<a class="jxr_linenumber" name="1" href="#1">1</a>   <strong class="jxr_keyword">package</strong> net.chwthewke.hamcrest.matchers;
+<a class="jxr_linenumber" name="2" href="#2">2</a>   
+<a class="jxr_linenumber" name="3" href="#3">3</a>   <strong class="jxr_keyword">import</strong> net.chwthewke.hamcrest.equivalence.ArrayEquivalences;
+<a class="jxr_linenumber" name="4" href="#4">4</a>   <strong class="jxr_keyword">import</strong> net.chwthewke.hamcrest.equivalence.Equivalence;
+<a class="jxr_linenumber" name="5" href="#5">5</a>   <strong class="jxr_keyword">import</strong> net.chwthewke.hamcrest.equivalence.IterableEquivalence;
+<a class="jxr_linenumber" name="6" href="#6">6</a>   
+<a class="jxr_linenumber" name="7" href="#7">7</a>   <strong class="jxr_keyword">class</strong> <a href="../../../../net/chwthewke/hamcrest/matchers/ContainerEquivalenceFactory.html">ContainerEquivalenceFactory</a> {
+<a class="jxr_linenumber" name="8" href="#8">8</a>       <strong class="jxr_keyword">public</strong> &lt;T&gt; Equivalence&lt;Iterable&lt;? <strong class="jxr_keyword">extends</strong> T&gt;&gt; iterableEquivalence(
+<a class="jxr_linenumber" name="9" href="#9">9</a>               <strong class="jxr_keyword">final</strong> Equivalence&lt;? <strong class="jxr_keyword">super</strong> T&gt; equivalenceOnElementType, <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">boolean</strong> enforceOrder ) {
+<a class="jxr_linenumber" name="10" href="#10">10</a>          <strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">new</strong> IterableEquivalence&lt;T&gt;( equivalenceOnElementType, enforceOrder );
+<a class="jxr_linenumber" name="11" href="#11">11</a>      }
+<a class="jxr_linenumber" name="12" href="#12">12</a>  
+<a class="jxr_linenumber" name="13" href="#13">13</a>      <strong class="jxr_keyword">public</strong> &lt;T&gt; Equivalence&lt;T[ ]&gt; arrayEquivalence( <strong class="jxr_keyword">final</strong> Equivalence&lt;? <strong class="jxr_keyword">super</strong> T&gt; equivalence, <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">boolean</strong> inOrder ) {
+<a class="jxr_linenumber" name="14" href="#14">14</a>          <strong class="jxr_keyword">return</strong> ArrayEquivalences.arrayEquivalence( equivalence, inOrder );
+<a class="jxr_linenumber" name="15" href="#15">15</a>      }
+<a class="jxr_linenumber" name="16" href="#16">16</a>  
+<a class="jxr_linenumber" name="17" href="#17">17</a>      <strong class="jxr_keyword">public</strong> Equivalence&lt;<strong class="jxr_keyword">boolean</strong>[ ]&gt; booleanArrayEquivalence( <strong class="jxr_keyword">final</strong> Equivalence&lt;? <strong class="jxr_keyword">super</strong> Boolean&gt; equivalence,
+<a class="jxr_linenumber" name="18" href="#18">18</a>              <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">boolean</strong> inOrder ) {
+<a class="jxr_linenumber" name="19" href="#19">19</a>          <strong class="jxr_keyword">return</strong> ArrayEquivalences.booleanArrayEquivalence( equivalence, inOrder );
+<a class="jxr_linenumber" name="20" href="#20">20</a>      }
+<a class="jxr_linenumber" name="21" href="#21">21</a>  
+<a class="jxr_linenumber" name="22" href="#22">22</a>      <strong class="jxr_keyword">public</strong> Equivalence&lt;byte[ ]&gt; byteArrayEquivalence( <strong class="jxr_keyword">final</strong> Equivalence&lt;? <strong class="jxr_keyword">super</strong> Byte&gt; equivalence, <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">boolean</strong> inOrder ) {
+<a class="jxr_linenumber" name="23" href="#23">23</a>          <strong class="jxr_keyword">return</strong> ArrayEquivalences.byteArrayEquivalence( equivalence, inOrder );
+<a class="jxr_linenumber" name="24" href="#24">24</a>      }
+<a class="jxr_linenumber" name="25" href="#25">25</a>  
+<a class="jxr_linenumber" name="26" href="#26">26</a>      <strong class="jxr_keyword">public</strong> Equivalence&lt;<strong class="jxr_keyword">char</strong>[ ]&gt; charArrayEquivalence( <strong class="jxr_keyword">final</strong> Equivalence&lt;? <strong class="jxr_keyword">super</strong> Character&gt; equivalence,
+<a class="jxr_linenumber" name="27" href="#27">27</a>              <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">boolean</strong> inOrder ) {
+<a class="jxr_linenumber" name="28" href="#28">28</a>          <strong class="jxr_keyword">return</strong> ArrayEquivalences.charArrayEquivalence( equivalence, inOrder );
+<a class="jxr_linenumber" name="29" href="#29">29</a>      }
+<a class="jxr_linenumber" name="30" href="#30">30</a>  
+<a class="jxr_linenumber" name="31" href="#31">31</a>      <strong class="jxr_keyword">public</strong> Equivalence&lt;<strong class="jxr_keyword">double</strong>[ ]&gt; doubleArrayEquivalence( <strong class="jxr_keyword">final</strong> Equivalence&lt;? <strong class="jxr_keyword">super</strong> Double&gt; equivalence,
+<a class="jxr_linenumber" name="32" href="#32">32</a>              <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">boolean</strong> inOrder ) {
+<a class="jxr_linenumber" name="33" href="#33">33</a>          <strong class="jxr_keyword">return</strong> ArrayEquivalences.doubleArrayEquivalence( equivalence, inOrder );
+<a class="jxr_linenumber" name="34" href="#34">34</a>      }
+<a class="jxr_linenumber" name="35" href="#35">35</a>  
+<a class="jxr_linenumber" name="36" href="#36">36</a>      <strong class="jxr_keyword">public</strong> Equivalence&lt;<strong class="jxr_keyword">float</strong>[ ]&gt; floatArrayEquivalence( <strong class="jxr_keyword">final</strong> Equivalence&lt;? <strong class="jxr_keyword">super</strong> Float&gt; equivalence,
+<a class="jxr_linenumber" name="37" href="#37">37</a>              <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">boolean</strong> inOrder ) {
+<a class="jxr_linenumber" name="38" href="#38">38</a>          <strong class="jxr_keyword">return</strong> ArrayEquivalences.floatArrayEquivalence( equivalence, inOrder );
+<a class="jxr_linenumber" name="39" href="#39">39</a>      }
+<a class="jxr_linenumber" name="40" href="#40">40</a>  
+<a class="jxr_linenumber" name="41" href="#41">41</a>      <strong class="jxr_keyword">public</strong> Equivalence&lt;<strong class="jxr_keyword">int</strong>[ ]&gt; intArrayEquivalence( <strong class="jxr_keyword">final</strong> Equivalence&lt;? <strong class="jxr_keyword">super</strong> Integer&gt; equivalence,
+<a class="jxr_linenumber" name="42" href="#42">42</a>              <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">boolean</strong> inOrder ) {
+<a class="jxr_linenumber" name="43" href="#43">43</a>          <strong class="jxr_keyword">return</strong> ArrayEquivalences.intArrayEquivalence( equivalence, inOrder );
+<a class="jxr_linenumber" name="44" href="#44">44</a>      }
+<a class="jxr_linenumber" name="45" href="#45">45</a>  
+<a class="jxr_linenumber" name="46" href="#46">46</a>      <strong class="jxr_keyword">public</strong> Equivalence&lt;<strong class="jxr_keyword">long</strong>[ ]&gt; longArrayEquivalence( <strong class="jxr_keyword">final</strong> Equivalence&lt;? <strong class="jxr_keyword">super</strong> Long&gt; equivalence, <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">boolean</strong> inOrder ) {
+<a class="jxr_linenumber" name="47" href="#47">47</a>          <strong class="jxr_keyword">return</strong> ArrayEquivalences.longArrayEquivalence( equivalence, inOrder );
+<a class="jxr_linenumber" name="48" href="#48">48</a>      }
+<a class="jxr_linenumber" name="49" href="#49">49</a>  
+<a class="jxr_linenumber" name="50" href="#50">50</a>      <strong class="jxr_keyword">public</strong> Equivalence&lt;<strong class="jxr_keyword">short</strong>[ ]&gt; shortArrayEquivalence( <strong class="jxr_keyword">final</strong> Equivalence&lt;? <strong class="jxr_keyword">super</strong> Short&gt; equivalence,
+<a class="jxr_linenumber" name="51" href="#51">51</a>              <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">boolean</strong> inOrder ) {
+<a class="jxr_linenumber" name="52" href="#52">52</a>          <strong class="jxr_keyword">return</strong> ArrayEquivalences.shortArrayEquivalence( equivalence, inOrder );
+<a class="jxr_linenumber" name="53" href="#53">53</a>      }
+<a class="jxr_linenumber" name="54" href="#54">54</a>  }
+</pre>
+<hr/><div id="footer">This page was automatically generated by <a href="http://maven.apache.org/">Maven</a></div></body>
+</html>
+
