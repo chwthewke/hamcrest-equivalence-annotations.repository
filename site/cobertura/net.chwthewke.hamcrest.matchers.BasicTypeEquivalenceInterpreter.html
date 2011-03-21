@@ -53,9 +53,9 @@
   <td class="src"><pre class="src">&nbsp;<span class="keyword">class</span> BasicTypeEquivalenceInterpreter {</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;18</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;19</td>  <td class="nbHitsCovered">&nbsp;79</td>  <td class="src"><pre class="src">&nbsp;    BasicTypeEquivalenceInterpreter( <span class="keyword">final</span> EquivalenceFactory equivalenceFactory ) {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;20</td>  <td class="nbHitsCovered">&nbsp;79</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">this</span>.equivalenceFactory = equivalenceFactory;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;21</td>  <td class="nbHitsCovered">&nbsp;79</td>  <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;19</td>  <td class="nbHitsCovered">&nbsp;85</td>  <td class="src"><pre class="src">&nbsp;    BasicTypeEquivalenceInterpreter( <span class="keyword">final</span> EquivalenceFactory equivalenceFactory ) {</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;20</td>  <td class="nbHitsCovered">&nbsp;85</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">this</span>.equivalenceFactory = equivalenceFactory;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;21</td>  <td class="nbHitsCovered">&nbsp;85</td>  <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;22</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;23</td>  <td class="nbHits">&nbsp;</td>
@@ -64,18 +64,18 @@
   <td class="src"><pre class="src">&nbsp;            <span class="keyword">final</span> Class&lt;T&gt; propertyType ) {</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;25</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;26</td>  <td class="nbHitsCovered">&nbsp;79</td>  <td class="src"><pre class="src">&nbsp;        checkNotNull( equivalenceAnnotation, <span class="string">"Unexpected missing annotation."</span> );</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;26</td>  <td class="nbHitsCovered">&nbsp;85</td>  <td class="src"><pre class="src">&nbsp;        checkNotNull( equivalenceAnnotation, <span class="string">"Unexpected missing annotation."</span> );</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;27</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;28</td>  <td class="nbHitsCovered"><a title="Line 28: Conditional coverage 100 % (2/2).">&nbsp;78</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 28: Conditional coverage 100 % (2/2).">        <span class="keyword">if</span> ( equivalenceAnnotation.annotationType( ) == ApproximateEquality.<span class="keyword">class</span> )</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;28</td>  <td class="nbHitsCovered"><a title="Line 28: Conditional coverage 100 % (2/2).">&nbsp;84</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 28: Conditional coverage 100 % (2/2).">        <span class="keyword">if</span> ( equivalenceAnnotation.annotationType( ) == ApproximateEquality.<span class="keyword">class</span> )</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;29</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">return</span> computeApproximateEquality( (ApproximateEquality) equivalenceAnnotation, propertyType );</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;30</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;31</td>  <td class="nbHitsCovered"><a title="Line 31: Conditional coverage 100 % (2/2).">&nbsp;67</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 31: Conditional coverage 100 % (2/2).">        <span class="keyword">if</span> ( equivalenceAnnotation.annotationType( ) == Text.<span class="keyword">class</span> )</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;31</td>  <td class="nbHitsCovered"><a title="Line 31: Conditional coverage 100 % (2/2).">&nbsp;73</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 31: Conditional coverage 100 % (2/2).">        <span class="keyword">if</span> ( equivalenceAnnotation.annotationType( ) == Text.<span class="keyword">class</span> )</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;32</td>  <td class="nbHitsCovered">&nbsp;17</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">return</span> computeTextEquivalence( (Text) equivalenceAnnotation, propertyType );</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;33</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;34</td>  <td class="nbHitsCovered">&nbsp;50</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">return</span> computeGenericEquivalence( equivalenceAnnotation, wrap( propertyType ), propertyType.isPrimitive( ) );</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;34</td>  <td class="nbHitsCovered">&nbsp;56</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">return</span> computeGenericEquivalence( equivalenceAnnotation, wrap( propertyType ), propertyType.isPrimitive( ) );</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;35</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;36</td>  <td class="nbHits">&nbsp;</td>
@@ -120,16 +120,16 @@
   <td class="src"><pre class="src">&nbsp;            <span class="keyword">final</span> Class&lt;V&gt; type, <span class="keyword">final</span> <span class="keyword">boolean</span> isPrimitive ) {</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;58</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;59</td>  <td class="nbHitsCovered">&nbsp;50</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">final</span> Class&lt;? <span class="keyword">extends</span> Annotation&gt; annotationType = equivalenceAnnotation.annotationType( );</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;59</td>  <td class="nbHitsCovered">&nbsp;56</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">final</span> Class&lt;? <span class="keyword">extends</span> Annotation&gt; annotationType = equivalenceAnnotation.annotationType( );</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;60</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;61</td>  <td class="nbHitsCovered"><a title="Line 61: Conditional coverage 100 % (2/2).">&nbsp;50</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 61: Conditional coverage 100 % (2/2).">        <span class="keyword">if</span> ( annotationType == ByEquivalence.<span class="keyword">class</span> )</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;61</td>  <td class="nbHitsCovered"><a title="Line 61: Conditional coverage 100 % (2/2).">&nbsp;56</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 61: Conditional coverage 100 % (2/2).">        <span class="keyword">if</span> ( annotationType == ByEquivalence.<span class="keyword">class</span> )</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;62</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">return</span> equivalenceFactory</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;63</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                .createEquivalenceInstance( (ByEquivalence) equivalenceAnnotation, type );</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;64</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;65</td>  <td class="nbHitsCovered"><a title="Line 65: Conditional coverage 100 % (2/2).">&nbsp;48</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 65: Conditional coverage 100 % (2/2).">        <span class="keyword">if</span> ( annotationType == BySpecification.<span class="keyword">class</span> )</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;65</td>  <td class="nbHitsCovered"><a title="Line 65: Conditional coverage 100 % (2/2).">&nbsp;54</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 65: Conditional coverage 100 % (2/2).">        <span class="keyword">if</span> ( annotationType == BySpecification.<span class="keyword">class</span> )</a></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;66</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;67</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">final</span> Class&lt;?&gt; specificationInterface = ( (BySpecification) equivalenceAnnotation ).value( );</pre></td></tr>
@@ -138,12 +138,12 @@
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;70</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;71</td>  <td class="nbHitsCovered"><a title="Line 71: Conditional coverage 100 % (4/4) [each condition: 100 %, 100 %].">&nbsp;44</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 71: Conditional coverage 100 % (4/4) [each condition: 100 %, 100 %].">        <span class="keyword">if</span> ( annotationType == Identity.<span class="keyword">class</span> &amp;&amp; !isPrimitive )</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;71</td>  <td class="nbHitsCovered"><a title="Line 71: Conditional coverage 100 % (4/4) [each condition: 100 %, 100 %].">&nbsp;50</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 71: Conditional coverage 100 % (4/4) [each condition: 100 %, 100 %].">        <span class="keyword">if</span> ( annotationType == Identity.<span class="keyword">class</span> &amp;&amp; !isPrimitive )</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;72</td>  <td class="nbHitsCovered">&nbsp;9</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">return</span> equivalenceFactory.getIdentity( );</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;73</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;74</td>  <td class="nbHitsCovered"><a title="Line 74: Conditional coverage 100 % (4/4) [each condition: 100 %, 100 %].">&nbsp;35</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 74: Conditional coverage 100 % (4/4) [each condition: 100 %, 100 %].">        <span class="keyword">if</span> ( annotationType == Equality.<span class="keyword">class</span> || annotationType == Identity.<span class="keyword">class</span> )</a></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;75</td>  <td class="nbHitsCovered">&nbsp;34</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">return</span> equivalenceFactory.getEquality( );</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;74</td>  <td class="nbHitsCovered"><a title="Line 74: Conditional coverage 100 % (4/4) [each condition: 100 %, 100 %].">&nbsp;41</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 74: Conditional coverage 100 % (4/4) [each condition: 100 %, 100 %].">        <span class="keyword">if</span> ( annotationType == Equality.<span class="keyword">class</span> || annotationType == Identity.<span class="keyword">class</span> )</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;75</td>  <td class="nbHitsCovered">&nbsp;40</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">return</span> equivalenceFactory.getEquality( );</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;76</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;77</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">throw</span> <span class="keyword">new</span> IllegalStateException( String.format( <span class="string">"Cannot process annotation of type %s."</span>,</pre></td></tr>
@@ -163,6 +163,6 @@
   <td class="src"><pre class="src">&nbsp;}</pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 1.9.4.1 on 01/03/11 00:32.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 1.9.4.1 on 21/03/11 12:18.</div>
 </body>
 </html>

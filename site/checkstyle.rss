@@ -8,7 +8,7 @@
     <language>en-us</language>
     <copyright>&#169;2011</copyright>
     <item>
-      <title>File: 43,
+      <title>File: 44,
              Errors: 0,
              Warnings: 0,
              Infos: 0
@@ -464,6 +464,20 @@
                           <tr>
                 <td>
                   <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.matchers.EquivalenceFactory.java">net/chwthewke/hamcrest/matchers/EquivalenceFactory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.matchers.WidenedEquivalence.java">net/chwthewke/hamcrest/matchers/WidenedEquivalence.java</a>
                 </td>
                 <td>
                   0
