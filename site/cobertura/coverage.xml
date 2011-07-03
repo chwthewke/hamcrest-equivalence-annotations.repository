@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.9592760180995475" branch-rate="0.9745762711864406" lines-covered="424" lines-valid="442" branches-covered="115" branches-valid="118" complexity="1.9565217391304348" version="1.9.4.1" timestamp="1302155667306">
+<coverage line-rate="0.9598214285714286" branch-rate="0.975" lines-covered="430" lines-valid="448" branches-covered="117" branches-valid="120" complexity="1.9432624113475176" version="1.9.4.1" timestamp="1309726147617">
 	<sources>
 		<source>--source</source>
-		<source>C:/Code/Projects/java/hamcrest-equivalence-annotations/target/checkout/src/main/java</source>
+		<source>C:/Users/Chewie/Code/Projects/java/hamcrest-equivalence-annotations/target/checkout/src/main/java</source>
 	</sources>
 	<packages>
 		<package name="net.chwthewke.hamcrest.annotations" line-rate="1.0" branch-rate="1.0" complexity="0.0">
@@ -71,7 +71,7 @@
 				</class>
 			</classes>
 		</package>
-		<package name="net.chwthewke.hamcrest.equivalence" line-rate="0.9655172413793104" branch-rate="0.9583333333333334" complexity="1.3333333333333333">
+		<package name="net.chwthewke.hamcrest.equivalence" line-rate="0.9672131147540983" branch-rate="0.9615384615384616" complexity="1.3333333333333333">
 			<classes>
 				<class name="net.chwthewke.hamcrest.equivalence.ApproximateEqualityEquivalence" filename="net/chwthewke/hamcrest/equivalence/ApproximateEqualityEquivalence.java" line-rate="1.0" branch-rate="1.0" complexity="1.0">
 					<methods>
@@ -422,13 +422,13 @@
 						</method>
 						<method name="equivalentTo" signature="(Ljava/lang/Object;)Lorg/hamcrest/Matcher;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="22" hits="135" branch="false"/>
+								<line number="22" hits="136" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
 						<line number="13" hits="49" branch="false"/>
-						<line number="22" hits="135" branch="false"/>
+						<line number="22" hits="136" branch="false"/>
 					</lines>
 				</class>
 				<class name="net.chwthewke.hamcrest.equivalence.Equivalence" filename="net/chwthewke/hamcrest/equivalence/Equivalence.java" line-rate="1.0" branch-rate="1.0" complexity="1.0">
@@ -536,7 +536,7 @@
 						</method>
 						<method name="equivalentTo" signature="(Ljava/lang/Object;)Lorg/hamcrest/Matcher;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="47" hits="204" branch="false"/>
+								<line number="47" hits="205" branch="false"/>
 							</lines>
 						</method>
 					</methods>
@@ -546,18 +546,18 @@
 						<line number="35" hits="100" branch="false"/>
 						<line number="36" hits="100" branch="false"/>
 						<line number="37" hits="100" branch="false"/>
-						<line number="47" hits="204" branch="false"/>
+						<line number="47" hits="205" branch="false"/>
 					</lines>
 				</class>
 				<class name="net.chwthewke.hamcrest.equivalence.LiftedMatcher" filename="net/chwthewke/hamcrest/equivalence/LiftedMatcher.java" line-rate="1.0" branch-rate="1.0" complexity="1.75">
 					<methods>
 						<method name="&lt;init&gt;" signature="(Ljava/lang/String;Lcom/google/common/base/Function;Lorg/hamcrest/Matcher;)V" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="13" hits="275" branch="false"/>
-								<line number="14" hits="275" branch="false"/>
-								<line number="15" hits="275" branch="false"/>
-								<line number="16" hits="275" branch="false"/>
-								<line number="17" hits="275" branch="false"/>
+								<line number="13" hits="276" branch="false"/>
+								<line number="14" hits="276" branch="false"/>
+								<line number="15" hits="276" branch="false"/>
+								<line number="16" hits="276" branch="false"/>
+								<line number="17" hits="276" branch="false"/>
 							</lines>
 						</method>
 						<method name="describeTo" signature="(Lorg/hamcrest/Description;)V" line-rate="1.0" branch-rate="1.0">
@@ -591,11 +591,11 @@
 						</method>
 					</methods>
 					<lines>
-						<line number="13" hits="275" branch="false"/>
-						<line number="14" hits="275" branch="false"/>
-						<line number="15" hits="275" branch="false"/>
-						<line number="16" hits="275" branch="false"/>
-						<line number="17" hits="275" branch="false"/>
+						<line number="13" hits="276" branch="false"/>
+						<line number="14" hits="276" branch="false"/>
+						<line number="15" hits="276" branch="false"/>
+						<line number="16" hits="276" branch="false"/>
+						<line number="17" hits="276" branch="false"/>
 						<line number="20" hits="24" branch="false"/>
 						<line number="24" hits="24" branch="false"/>
 						<line number="28" hits="404" branch="false"/>
@@ -613,6 +613,44 @@
 								<condition number="0" type="jump" coverage="100 %"/>
 							</conditions>
 						</line>
+					</lines>
+				</class>
+				<class name="net.chwthewke.hamcrest.equivalence.NullAwareEquivalence" filename="net/chwthewke/hamcrest/equivalence/NullAwareEquivalence.java" line-rate="1.0" branch-rate="1.0" complexity="1.3333333333333333">
+					<methods>
+						<method name="&lt;init&gt;" signature="(Lnet/chwthewke/hamcrest/equivalence/Equivalence;Ljava/lang/Class;)V" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="17" hits="3" branch="false"/>
+								<line number="18" hits="3" branch="false"/>
+								<line number="19" hits="3" branch="false"/>
+								<line number="20" hits="3" branch="false"/>
+							</lines>
+						</method>
+						<method name="equivalentTo" signature="(Ljava/lang/Object;)Lorg/hamcrest/Matcher;" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="14" hits="6" branch="true" condition-coverage="100 % (2/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="100 %"/>
+									</conditions>
+								</line>
+							</lines>
+						</method>
+						<method name="nullAware" signature="(Lnet/chwthewke/hamcrest/equivalence/Equivalence;Ljava/lang/Class;)Lnet/chwthewke/hamcrest/equivalence/NullAwareEquivalence;" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="10" hits="3" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="10" hits="3" branch="false"/>
+						<line number="14" hits="6" branch="true" condition-coverage="100 % (2/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="100 %"/>
+							</conditions>
+						</line>
+						<line number="17" hits="3" branch="false"/>
+						<line number="18" hits="3" branch="false"/>
+						<line number="19" hits="3" branch="false"/>
+						<line number="20" hits="3" branch="false"/>
 					</lines>
 				</class>
 				<class name="net.chwthewke.hamcrest.equivalence.TextEquivalence" filename="net/chwthewke/hamcrest/equivalence/TextEquivalence.java" line-rate="0.9" branch-rate="0.9166666666666666" complexity="2.125">
@@ -1201,7 +1239,7 @@
 						</method>
 						<method name="equivalentTo" signature="(Ljava/lang/Object;)Lorg/hamcrest/Matcher;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="37" hits="73" branch="false"/>
+								<line number="37" hits="74" branch="false"/>
 							</lines>
 						</method>
 						<method name="findMatchingProperty" signature="(Ljava/lang/reflect/Method;)Ljava/lang/reflect/Method;" line-rate="1.0" branch-rate="1.0">
@@ -1234,7 +1272,7 @@
 						<line number="31" hits="48" branch="false"/>
 						<line number="33" hits="48" branch="false"/>
 						<line number="34" hits="43" branch="false"/>
-						<line number="37" hits="73" branch="false"/>
+						<line number="37" hits="74" branch="false"/>
 						<line number="41" hits="48" branch="false"/>
 						<line number="43" hits="47" branch="false"/>
 						<line number="45" hits="43" branch="false"/>
@@ -1293,16 +1331,16 @@
 					<methods>
 						<method name="&lt;init&gt;" signature="(Ljava/lang/Class;Ljava/util/Collection;Ljava/lang/Object;)V" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="52" hits="77" branch="false"/>
-								<line number="54" hits="77" branch="false"/>
-								<line number="56" hits="77" branch="true" condition-coverage="100 % (2/2)">
+								<line number="52" hits="78" branch="false"/>
+								<line number="54" hits="78" branch="false"/>
+								<line number="56" hits="78" branch="true" condition-coverage="100 % (2/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="100 %"/>
 									</conditions>
 								</line>
-								<line number="58" hits="98" branch="false"/>
-								<line number="60" hits="76" branch="false"/>
-								<line number="63" hits="77" branch="false"/>
+								<line number="58" hits="99" branch="false"/>
+								<line number="60" hits="77" branch="false"/>
+								<line number="63" hits="78" branch="false"/>
 							</lines>
 						</method>
 						<method name="describeTo" signature="(Lorg/hamcrest/Description;)V" line-rate="1.0" branch-rate="1.0">
@@ -1361,16 +1399,16 @@
 						<line number="40" hits="57" branch="false"/>
 						<line number="41" hits="57" branch="false"/>
 						<line number="45" hits="30" branch="false"/>
-						<line number="52" hits="77" branch="false"/>
-						<line number="54" hits="77" branch="false"/>
-						<line number="56" hits="77" branch="true" condition-coverage="100 % (2/2)">
+						<line number="52" hits="78" branch="false"/>
+						<line number="54" hits="78" branch="false"/>
+						<line number="56" hits="78" branch="true" condition-coverage="100 % (2/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="100 %"/>
 							</conditions>
 						</line>
-						<line number="58" hits="98" branch="false"/>
-						<line number="60" hits="76" branch="false"/>
-						<line number="63" hits="77" branch="false"/>
+						<line number="58" hits="99" branch="false"/>
+						<line number="60" hits="77" branch="false"/>
+						<line number="63" hits="78" branch="false"/>
 					</lines>
 				</class>
 				<class name="net.chwthewke.hamcrest.matchers.ContainerEquivalenceFactory" filename="net/chwthewke/hamcrest/matchers/ContainerEquivalenceFactory.java" line-rate="1.0" branch-rate="1.0" complexity="1.0">
@@ -1633,54 +1671,54 @@
 					<methods>
 						<method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="11" hits="78" branch="false"/>
-								<line number="40" hits="78" branch="false"/>
-								<line number="41" hits="78" branch="false"/>
+								<line number="12" hits="78" branch="false"/>
 								<line number="42" hits="78" branch="false"/>
+								<line number="43" hits="78" branch="false"/>
+								<line number="44" hits="78" branch="false"/>
 							</lines>
 						</method>
 						<method name="createEquivalenceInstance" signature="(Lnet/chwthewke/hamcrest/annotations/ByEquivalence;Ljava/lang/Class;)Lnet/chwthewke/hamcrest/equivalence/Equivalence;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="37" hits="1" branch="false"/>
+								<line number="39" hits="1" branch="false"/>
 							</lines>
 						</method>
 						<method name="getApproximateEquality" signature="(D)Lnet/chwthewke/hamcrest/equivalence/Equivalence;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="14" hits="9" branch="false"/>
+								<line number="15" hits="9" branch="false"/>
 							</lines>
 						</method>
 						<method name="getEquality" signature="()Lnet/chwthewke/hamcrest/equivalence/Equivalence;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="18" hits="39" branch="false"/>
+								<line number="19" hits="39" branch="false"/>
 							</lines>
 						</method>
 						<method name="getEquivalenceBySpecification" signature="(Ljava/lang/Class;Ljava/lang/Class;)Lnet/chwthewke/hamcrest/equivalence/Equivalence;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="31" hits="3" branch="false"/>
+								<line number="32" hits="3" branch="false"/>
 							</lines>
 						</method>
 						<method name="getIdentity" signature="()Lnet/chwthewke/hamcrest/equivalence/Equivalence;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="26" hits="8" branch="false"/>
+								<line number="27" hits="8" branch="false"/>
 							</lines>
 						</method>
 						<method name="getTextEquivalence" signature="([Lnet/chwthewke/hamcrest/equivalence/TextEquivalenceOption;)Lnet/chwthewke/hamcrest/equivalence/Equivalence;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="22" hits="17" branch="false"/>
+								<line number="23" hits="17" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
-						<line number="11" hits="78" branch="false"/>
-						<line number="14" hits="9" branch="false"/>
-						<line number="18" hits="39" branch="false"/>
-						<line number="22" hits="17" branch="false"/>
-						<line number="26" hits="8" branch="false"/>
-						<line number="31" hits="3" branch="false"/>
-						<line number="37" hits="1" branch="false"/>
-						<line number="40" hits="78" branch="false"/>
-						<line number="41" hits="78" branch="false"/>
+						<line number="12" hits="78" branch="false"/>
+						<line number="15" hits="9" branch="false"/>
+						<line number="19" hits="39" branch="false"/>
+						<line number="23" hits="17" branch="false"/>
+						<line number="27" hits="8" branch="false"/>
+						<line number="32" hits="3" branch="false"/>
+						<line number="39" hits="1" branch="false"/>
 						<line number="42" hits="78" branch="false"/>
+						<line number="43" hits="78" branch="false"/>
+						<line number="44" hits="78" branch="false"/>
 					</lines>
 				</class>
 				<class name="net.chwthewke.hamcrest.matchers.EquivalenceSpecification" filename="net/chwthewke/hamcrest/matchers/EquivalenceSpecification.java" line-rate="1.0" branch-rate="1.0" complexity="0.0">
@@ -2081,14 +2119,14 @@
 						</method>
 						<method name="apply" signature="(Ljava/lang/Object;)Ljava/lang/Object;" line-rate="0.75" branch-rate="1.0">
 							<lines>
-								<line number="17" hits="260" branch="false"/>
-								<line number="20" hits="260" branch="false"/>
-								<line number="21" hits="260" branch="false"/>
+								<line number="17" hits="261" branch="false"/>
+								<line number="20" hits="261" branch="false"/>
+								<line number="21" hits="261" branch="false"/>
 								<line number="23" hits="0" branch="false"/>
 								<line number="25" hits="0" branch="false"/>
 								<line number="27" hits="2" branch="false"/>
 								<line number="29" hits="2" branch="false"/>
-								<line number="36" hits="260" branch="false"/>
+								<line number="36" hits="261" branch="false"/>
 							</lines>
 						</method>
 						<method name="getProperty" signature="()Ljava/lang/reflect/Method;" line-rate="1.0" branch-rate="1.0">
@@ -2098,8 +2136,8 @@
 						</method>
 						<method name="invokeAndCast" signature="(Ljava/lang/Object;)Ljava/lang/Object;" line-rate="1.0" branch-rate="1.0">
 							<lines>
-								<line number="41" hits="260" branch="false"/>
-								<line number="44" hits="258" branch="false"/>
+								<line number="41" hits="261" branch="false"/>
+								<line number="44" hits="259" branch="false"/>
 								<line number="46" hits="1" branch="false"/>
 								<line number="48" hits="1" branch="false"/>
 							</lines>
@@ -2110,16 +2148,16 @@
 						<line number="12" hits="80" branch="false"/>
 						<line number="13" hits="80" branch="false"/>
 						<line number="14" hits="80" branch="false"/>
-						<line number="17" hits="260" branch="false"/>
-						<line number="20" hits="260" branch="false"/>
-						<line number="21" hits="260" branch="false"/>
+						<line number="17" hits="261" branch="false"/>
+						<line number="20" hits="261" branch="false"/>
+						<line number="21" hits="261" branch="false"/>
 						<line number="23" hits="0" branch="false"/>
 						<line number="25" hits="0" branch="false"/>
 						<line number="27" hits="2" branch="false"/>
 						<line number="29" hits="2" branch="false"/>
-						<line number="36" hits="260" branch="false"/>
-						<line number="41" hits="260" branch="false"/>
-						<line number="44" hits="258" branch="false"/>
+						<line number="36" hits="261" branch="false"/>
+						<line number="41" hits="261" branch="false"/>
+						<line number="44" hits="259" branch="false"/>
 						<line number="46" hits="1" branch="false"/>
 						<line number="48" hits="1" branch="false"/>
 						<line number="59" hits="14" branch="false"/>

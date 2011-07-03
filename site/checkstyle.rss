@@ -8,10 +8,10 @@
     <language>en-us</language>
     <copyright>&#169;2011</copyright>
     <item>
-      <title>File: 44,
+      <title>File: 45,
              Errors: 0,
              Warnings: 0,
-             Infos: 0
+             Infos: 3
       </title>
             <link>${project.url}/checkstyle.html</link>
       <description>
@@ -439,6 +439,20 @@
                 </td>
                 <td>
                   0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#net.chwthewke.hamcrest.equivalence.NullAwareEquivalence.java">net/chwthewke/hamcrest/equivalence/NullAwareEquivalence.java</a>
+                </td>
+                <td>
+                  3
                 </td>
                 <td>
                   0
